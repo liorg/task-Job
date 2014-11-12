@@ -363,6 +363,7 @@
     <Compile Include="TaskJob\TaskJobSupplierEmail.cs" />
     <Compile Include="TaskJob\TaskJobType.cs" />
     <Compile Include="TaskJob\TaskJobWebsiteEmail.cs" />
+    <Compile Include="TaskJob\TasksManager.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

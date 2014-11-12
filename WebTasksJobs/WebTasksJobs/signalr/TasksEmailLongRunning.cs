@@ -16,14 +16,14 @@ namespace Kipodeal.RT
 {
     public class TasksEmailLongRunning : Hub
     {
-        private readonly TasksManager _tasks;
+        private readonly TasksManager<TasksEmailLongRunning> _tasks;
 
-        public TasksEmailLongRunning(TasksManager tasks)
+        public TasksEmailLongRunning(TasksManager<TasksEmailLongRunning> tasks)
         {
             _tasks = tasks;
         }
         public TasksEmailLongRunning()
-            : this(TasksManager.Instance)
+            : this(TasksManager<TasksEmailLongRunning>.Instance)
         { }
 
         public async Task<IEnumerable<TaskItem>> GetAllTasks()
