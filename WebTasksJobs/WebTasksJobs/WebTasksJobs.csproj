@@ -258,6 +258,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="TEST\l.html" />
     <Content Include="TEST\l2.html" />
+    <Content Include="TEST\taskasync.html" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -335,10 +336,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Help\AsyncLock\AsyncSemaphore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="signalr\SqlLongRunning.cs" />
     <Compile Include="signalr\Startup.cs" />
     <Compile Include="signalr\TasksEmailLongRunning.cs" />
+    <Compile Include="signalr\TasksLongRunningAscyn.cs" />
     <Compile Include="signalr\TasksManager.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -358,12 +361,14 @@
     <Compile Include="TaskJob\ITaskItem.cs" />
     <Compile Include="TaskJob\ITaskJob.cs" />
     <Compile Include="TaskJob\JobTaskTypeAttribute.cs" />
+    <Compile Include="Help\LoggerManager.cs" />
     <Compile Include="TaskJob\TaskItem.cs" />
     <Compile Include="TaskJob\TaskJobMemberEmail.cs" />
     <Compile Include="TaskJob\TaskJobSupplierEmail.cs" />
     <Compile Include="TaskJob\TaskJobType.cs" />
     <Compile Include="TaskJob\TaskJobWebsiteEmail.cs" />
     <Compile Include="TaskJob\TasksManager.cs" />
+    <Compile Include="TaskJob\TasksManagerAsync.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
