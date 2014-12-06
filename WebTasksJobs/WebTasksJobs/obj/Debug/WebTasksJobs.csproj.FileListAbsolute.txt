@@ -43,3 +43,4 @@ C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsof
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\obj\Debug\WebTasksJobs.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\obj\Debug\WebTasksJobs.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\obj\Debug\WebTasksJobs.csprojResolveAssemblyReference.cache
