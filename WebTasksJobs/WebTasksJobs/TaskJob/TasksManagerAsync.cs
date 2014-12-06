@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -58,9 +59,10 @@ namespace Kipodeal.TaskJob
             //Step 1:
             //Find the assembly (.dll) that has the stuff we need 
             //(i.e. [Export]ed stuff) and put it in our catalog
-            DirectoryCatalog catalog = new DirectoryCatalog
-          (System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin"));
+          //  DirectoryCatalog catalog = new DirectoryCatalog
+          //(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin"));
 
+            var catalog = new AssemblyCatalog(Assembly.GetExecutingAssembly());
             //Step 2:
             //To do anything with the stuff in the catalog, 
             //we need to put into a container (Which has methods to do the magic stuff)

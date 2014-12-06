@@ -118,22 +118,21 @@
             rowTemplate = '<tr data-symbol="{TaskId}"><td>{TaskId}</td><td>{TaskName}</td><td>{CreateCount}</td><td>{UpdateCount} </td><td>{FailedCount}</td><td>{CountAll}</td><td>{IsRunningS}</td></tr>';
 
             $.connection.hub.disconnected(function () {
-                if ($.connection.hub.lastError)
-                {
+                if ($.connection.hub.lastError) {
                     $("#err").text($.connection.hub.lastError.message);
-                   // alert("Disconnected. Reason: " + $.connection.hub.lastError.message);
+                    // alert("Disconnected. Reason: " + $.connection.hub.lastError.message);
                 }
                 $("#disconnect").text("disconnected!!!!");
             });
 
             $.connection.hub.reconnecting(function () {
                 $("#reconnecting").text("reconnecting!!!!");
-              
+
             });
 
             $.connection.hub.reconnected(function () {
                 $("#reconnected").text("reconnected!!!!");
-              
+
             });
 
             function init() {
