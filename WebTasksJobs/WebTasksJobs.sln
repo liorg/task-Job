@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTasksJobs", "WebTasksJobs\WebTasksJobs.csproj", "{87A43B87-3A4A-4572-BC79-C69DF4C00C6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobsProvider", "JobsMonitor\JobsProvider.csproj", "{14A0469D-DA4A-4D83-8172-DCF67175FB86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{87A43B87-3A4A-4572-BC79-C69DF4C00C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A43B87-3A4A-4572-BC79-C69DF4C00C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A43B87-3A4A-4572-BC79-C69DF4C00C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A0469D-DA4A-4D83-8172-DCF67175FB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A0469D-DA4A-4D83-8172-DCF67175FB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A0469D-DA4A-4D83-8172-DCF67175FB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A0469D-DA4A-4D83-8172-DCF67175FB86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

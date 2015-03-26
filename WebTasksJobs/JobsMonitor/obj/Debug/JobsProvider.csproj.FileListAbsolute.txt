@@ -1,0 +1,5 @@
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\JobsMonitor\obj\Debug\JobsProvider.csprojResolveAssemblyReference.cache
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\JobsMonitor\bin\Debug\JobsMonitor.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\JobsMonitor\bin\Debug\JobsMonitor.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\JobsMonitor\obj\Debug\JobsMonitor.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\JobsMonitor\obj\Debug\JobsMonitor.pdb
