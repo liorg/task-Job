@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TasksManagerAsync2.cs" />
     <Compile Include="help\AsyncLock\AsyncSemaphore.cs" />
     <Compile Include="help\LoggerManager.cs" />
     <Compile Include="IJobMetadata.cs" />
@@ -71,6 +72,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\contract\Lior.Job.Contract\Lior.Job.Contract.csproj">
+      <Project>{e3f36d6f-5e76-4a48-b007-2db6f482a8de}</Project>
+      <Name>Lior.Job.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

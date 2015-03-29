@@ -1,7 +1,14 @@
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.csprojResolveAssemblyReference.cache
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TaskBll.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TaskBll.pdb
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TasksJob.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Lior.Job.Contract.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Owin.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TasksJob.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Lior.Job.Contract.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.csprojResolveAssemblyReference.cache
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.pdb

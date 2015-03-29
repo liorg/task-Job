@@ -1,0 +1,4 @@
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\bin\Debug\Lior.Job.Contract.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\bin\Debug\Lior.Job.Contract.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\obj\Debug\Lior.Job.Contract.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\obj\Debug\Lior.Job.Contract.pdb

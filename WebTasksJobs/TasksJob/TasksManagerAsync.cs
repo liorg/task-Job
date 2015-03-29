@@ -8,12 +8,14 @@
 //using System.Collections.Generic;
 //using System.ComponentModel.Composition;
 //using System.ComponentModel.Composition.Hosting;
+//using System.IO;
 //using System.Linq;
 //using System.Reflection;
 //using System.Text;
 //using System.Threading;
 //using System.Threading.Tasks;
-//using WebTasksJobs.TaskJob;
+//using TasksJobs.TaskJob;
+
 
 //namespace Kipodeal.TaskJob
 //{
@@ -25,7 +27,8 @@
 //        [ImportMany]
 //        private IEnumerable<Lazy<ITaskJob, IJobMetadata>> AllPlugIns { get; set; }
 
-//        private readonly static Lazy<TasksManagerAsync<THub>> _instance = new Lazy<TasksManagerAsync<THub>>(() => new TasksManagerAsync<THub>(GlobalHost.ConnectionManager.GetHubContext<THub>().Clients));
+//        private readonly static Lazy<TasksManagerAsync<THub>> _instance = new Lazy<TasksManagerAsync<THub>>
+//            (() => new TasksManagerAsync<THub>(GlobalHost.ConnectionManager.GetHubContext<THub>().Clients));
 
 //        private readonly ConcurrentDictionary<Guid, TaskItem> _tasks = new ConcurrentDictionary<Guid, TaskItem>();
 
@@ -61,16 +64,41 @@
 //            //(i.e. [Export]ed stuff) and put it in our catalog
 //            //  DirectoryCatalog catalog = new DirectoryCatalog
 //            //(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin"));
-//          //  DirectoryCatalog catalog = new DirectoryCatalog(".");
-//           var df = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
+//            //  DirectoryCatalog catalog = new DirectoryCatalog(".");
+//            var df = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
 
-//           var catalog = new AggregateCatalog(); 
-//            catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
-//            catalog.Catalogs.Add(new DirectoryCatalog("."));
-//         // var catalog = new AssemblyCatalog(Assembly.GetExecutingAssembly());
+//            //  var catalog = new AggregateCatalog();
+//            //catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
+//            ////  catalog.Catalogs.Add(new DirectoryCatalog("."));
+//            //  catalog.Catalogs.Add(new DirectoryCatalog(df));
+//            // var catalog = new AssemblyCatalog(Assembly.GetExecutingAssembly());
 //            //Step 2:
 //            //To do anything with the stuff in the catalog, 
 //            //we need to put into a container (Which has methods to do the magic stuff)
+
+//            // var di = new DirectoryInfo(System.Web.HttpContext.Current.Server.MapPath("../../bin/"));
+//            var di = new DirectoryInfo(df);
+
+//            if (!di.Exists) throw new Exception("Folder not exists: " + di.FullName);
+
+//            var dlls = di.GetFileSystemInfos("*.dll");
+//            AggregateCatalog catalog = new AggregateCatalog();
+
+//            foreach (var fi in dlls)
+//            {
+//                try
+//                {
+//                    var ac = new AssemblyCatalog(Assembly.LoadFile(fi.FullName));
+//                    var parts = ac.Parts.ToArray(); // throws ReflectionTypeLoadException 
+//                    catalog.Catalogs.Add(ac);
+//                }
+//                catch (ReflectionTypeLoadException ex)
+//                {
+//                    // Elmah.ErrorSignal.FromCurrentContext().Raise(ex);
+//                }
+//            }
+
+
 //            CompositionContainer container = new CompositionContainer(catalog);
 
 //            //Step 3:
@@ -81,7 +109,7 @@
 
 //        public async Task InitTask(Guid taskid, string callerId)
 //        {
-//           // var df = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
+//            // var df = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
 //            LoggerManager log = new LoggerManager();
 //            log.Trace("TasksManagerAsync", "InitTask", "begin: taskid" + taskid.ToString() + ",callerid" + callerId);
 //            IsStartService = true;
