@@ -22,7 +22,7 @@ using TasksJobs.TaskJob;
 namespace Kipodeal.TaskJob
 {
 
-    public class TasksManagerAsync<THub> where THub : Hub
+    public class TasksManagerAsync2<THub> where THub : Hub
     {
         private static volatile bool IsStartService = false;
         [Import]
@@ -31,8 +31,8 @@ namespace Kipodeal.TaskJob
         [ImportMany]
         private IEnumerable<Lazy<ITaskJob, IJobMetadata>> AllPlugIns { get; set; }
 
-        private readonly static Lazy<TasksManagerAsync<THub>> _instance = new Lazy<TasksManagerAsync<THub>>
-            (() => new TasksManagerAsync<THub>(GlobalHost.ConnectionManager.GetHubContext<THub>().Clients));
+        private readonly static Lazy<TasksManagerAsync2<THub>> _instance = new Lazy<TasksManagerAsync2<THub>>
+            (() => new TasksManagerAsync2<THub>(GlobalHost.ConnectionManager.GetHubContext<THub>().Clients));
 
         private readonly ConcurrentDictionary<Guid, TaskItem> _tasks = new ConcurrentDictionary<Guid, TaskItem>();
 
@@ -44,7 +44,7 @@ namespace Kipodeal.TaskJob
 
         private volatile bool _updatingTaskFlag = false;
 
-        public TasksManagerAsync(IHubConnectionContext<dynamic> client)
+        public TasksManagerAsync2(IHubConnectionContext<dynamic> client)
         {
             // TODO: Complete member initialization
             Clients = client;
@@ -69,7 +69,9 @@ namespace Kipodeal.TaskJob
             //  DirectoryCatalog catalog = new DirectoryCatalog
             //(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin"));
             //  DirectoryCatalog catalog = new DirectoryCatalog(".");
-            var df = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
+            //
+            var df = System.Configuration.ConfigurationManager.AppSettings["pluginPath"]; //System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
+            var connStr = System.Configuration.ConfigurationManager.AppSettings["connStr"]; // System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
 
             //  var catalog = new AggregateCatalog();
             //catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
@@ -87,7 +89,6 @@ namespace Kipodeal.TaskJob
 
             var dlls = di.GetFileSystemInfos("*.dll");
             AggregateCatalog catalog = new AggregateCatalog();
-
             foreach (var fi in dlls)
             {
                 try
@@ -101,10 +102,11 @@ namespace Kipodeal.TaskJob
                     // Elmah.ErrorSignal.FromCurrentContext().Raise(ex);
                 }
             }
-
+            catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
+            
 
             CompositionContainer container = new CompositionContainer(catalog);
-            container.ComposeExportedValue("Msg", "How are You!!!");
+            container.ComposeExportedValue("ConnStr", connStr);
             //Step 3:
             //Now lets do the magic bit - Wiring everything up
             container.ComposeParts(this);
@@ -274,7 +276,7 @@ namespace Kipodeal.TaskJob
             set;
         }
 
-        public static TasksManagerAsync<THub> Instance
+        public static TasksManagerAsync2<THub> Instance
         {
             get
             {

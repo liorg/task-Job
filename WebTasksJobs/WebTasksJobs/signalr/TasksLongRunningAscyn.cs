@@ -16,14 +16,14 @@ namespace Kipodeal.RT
 {
     public class TasksLongRunningAscyn : Hub
     {
-        private readonly TasksManagerAsync<TasksLongRunningAscyn> _tasks;
+        private readonly TasksManagerAsync2<TasksLongRunningAscyn> _tasks;
 
-        public TasksLongRunningAscyn(TasksManagerAsync<TasksLongRunningAscyn> tasks)
+        public TasksLongRunningAscyn(TasksManagerAsync2<TasksLongRunningAscyn> tasks)
         {
             _tasks = tasks;
         }
 
-        public TasksLongRunningAscyn() : this(TasksManagerAsync<TasksLongRunningAscyn>.Instance) { }
+        public TasksLongRunningAscyn() : this(TasksManagerAsync2<TasksLongRunningAscyn>.Instance) { }
 
         public async Task<IEnumerable<TaskItem>> GetAllTasks()
         {

@@ -6,29 +6,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Lior.Jobs.TaskDal
 {
     [Export(typeof(IDal))]
-    public class A : IDal
+    public class TaskRepository : IDal
     {
-        public string message;
+        public string ConnectionString;
 
-        public A()
+        public TaskRepository()
         {
             //  This constructor would not be called. 
             //  Since we use a ImportingConstructor attribute
         }
 
         [ImportingConstructor]
-        public A([Import("Msg")]string str)
+        public TaskRepository([Import("ConnStr")]string connstr)
         {
-            message = str;
+            ConnectionString = connstr;
         }
 
         
         public string show()
         {
-            return "Welcome" +message;
+            return "Welcome" +ConnectionString;
         }
     }
 }

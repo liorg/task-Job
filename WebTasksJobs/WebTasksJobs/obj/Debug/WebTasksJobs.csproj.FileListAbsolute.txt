@@ -1,4 +1,5 @@
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\WebTasksJobs.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\WebTasksJobs.pdb
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Antlr3.Runtime.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\AspNet.ScriptManager.jQuery.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
@@ -21,16 +22,13 @@ C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsof
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsoft.Owin.Security.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsoft.ScriptManager.MSAjax.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Newtonsoft.Json.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Owin.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\System.Web.Optimization.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\System.Web.Providers.dll
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\TaskBll.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\TasksJob.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\WebGrease.dll
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\WebTasksJobs.pdb
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\TaskBll.pdb
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Lior.Job.Contract.pdb
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\Lior.Jobs.TaskDal.pdb
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\WebTasksJobs\bin\TasksJob.pdb

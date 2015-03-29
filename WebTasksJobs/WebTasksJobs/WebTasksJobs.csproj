@@ -402,10 +402,6 @@
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\bll\TaskBll\TaskBll.csproj">
-      <Project>{5a26d304-123d-4b1d-8f04-78263bfdfe40}</Project>
-      <Name>TaskBll</Name>
-    </ProjectReference>
     <ProjectReference Include="..\contract\Lior.Job.Contract\Lior.Job.Contract.csproj">
       <Project>{e3f36d6f-5e76-4a48-b007-2db6f482a8de}</Project>
       <Name>Lior.Job.Contract</Name>
