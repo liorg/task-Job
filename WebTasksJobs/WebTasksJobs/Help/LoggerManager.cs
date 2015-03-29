@@ -9,7 +9,7 @@ namespace WebTasksJobs.TaskJob
     {
         internal void Trace(string p1, string p2, string p3)
         {
-           
+
         }
     }
 }

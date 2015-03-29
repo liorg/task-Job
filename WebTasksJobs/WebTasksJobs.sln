@@ -5,6 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTasksJobs", "WebTasksJob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobsProvider", "JobsMonitor\JobsProvider.csproj", "{14A0469D-DA4A-4D83-8172-DCF67175FB86}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{C07C9120-1926-4BB6-A813-14E34C86B87E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jobtest", "jobtest", "{57DEA5D2-DC09-46B1-A271-701DF8A6B708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jobTestEmail", "jobtest\jobNotifiaction\jobTestEmail.csproj", "{D0909754-4E61-4173-94AA-8B3E7269759A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksJob", "TasksJob\TasksJob.csproj", "{9DB2C118-54AF-40A9-9651-48C3203CFBC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bll", "Bll", "{F68789B9-A1F9-4FB8-A030-44BEB94AA572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBll", "bll\TaskBll\TaskBll.csproj", "{5A26D304-123D-4B1D-8F04-78263BFDFE40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,8 +31,24 @@ Global
 		{14A0469D-DA4A-4D83-8172-DCF67175FB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14A0469D-DA4A-4D83-8172-DCF67175FB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14A0469D-DA4A-4D83-8172-DCF67175FB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0909754-4E61-4173-94AA-8B3E7269759A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0909754-4E61-4173-94AA-8B3E7269759A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0909754-4E61-4173-94AA-8B3E7269759A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0909754-4E61-4173-94AA-8B3E7269759A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB2C118-54AF-40A9-9651-48C3203CFBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB2C118-54AF-40A9-9651-48C3203CFBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB2C118-54AF-40A9-9651-48C3203CFBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB2C118-54AF-40A9-9651-48C3203CFBC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A26D304-123D-4B1D-8F04-78263BFDFE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A26D304-123D-4B1D-8F04-78263BFDFE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A26D304-123D-4B1D-8F04-78263BFDFE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A26D304-123D-4B1D-8F04-78263BFDFE40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0909754-4E61-4173-94AA-8B3E7269759A} = {57DEA5D2-DC09-46B1-A271-701DF8A6B708}
+		{5A26D304-123D-4B1D-8F04-78263BFDFE40} = {F68789B9-A1F9-4FB8-A030-44BEB94AA572}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.csprojResolveAssemblyReference.cache
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TaskBll.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TaskBll.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TasksJob.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TasksJob.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.pdb

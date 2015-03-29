@@ -359,6 +359,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="signalr\TasksLongRunningAscyn.cs" />
     <Compile Include="signalr\TasksManager.cs" />
+    <Compile Include="signalr\TasksManagerAsync.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -399,6 +400,16 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bll\TaskBll\TaskBll.csproj">
+      <Project>{5a26d304-123d-4b1d-8f04-78263bfdfe40}</Project>
+      <Name>TaskBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TasksJob\TasksJob.csproj">
+      <Project>{9db2c118-54af-40a9-9651-48c3203cfbc9}</Project>
+      <Name>TasksJob</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
