@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Kipodeal.TaskJob
 {
+ // [PartCreationPolicy(CreationPolicy.NonShared)]
     [Export(typeof(ITaskJob))]
     [JobTaskType(TaskJobType.SupplierEmailSender)]
     public class TaskJobSupplierEmail : ITaskJob

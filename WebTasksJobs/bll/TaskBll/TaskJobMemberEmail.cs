@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Kipodeal.TaskJob
 {
+ // [PartCreationPolicy(CreationPolicy.NonShared)]
     [Export(typeof(ITaskJob))]
     [JobTaskType(TaskJobType.MemberEmailSender)]
     public class TaskJobMemberEmail : ITaskJob
@@ -23,7 +24,7 @@ namespace Kipodeal.TaskJob
             var result = tf.StartNew(() =>
             {
                 _taskitem.UpdateCount = 1990;
-                _taskitem.TaskName = "start MEMEBER";
+                _taskitem.TaskName = "start MEMEBER11!!!";
 
             });
 
@@ -35,5 +36,7 @@ namespace Kipodeal.TaskJob
             _taskitem.CountAll += random.Next();
             return _taskitem;
         }
+
+
     }
 }

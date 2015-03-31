@@ -9,7 +9,8 @@ namespace Kipodeal.Contract.TaskJob
 {
 
     [MetadataAttribute]
-    [AttributeUsage(AttributeTargets.Class)]
+    //[AttributeUsage(AttributeTargets.Class)]
+    [AttributeUsageAttribute(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
     public class JobTaskTypeAttribute : Attribute
     {
         public JobTaskTypeAttribute(TaskJobType taskJobType)

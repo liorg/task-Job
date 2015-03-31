@@ -31,6 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDal.cs" />
+    <Compile Include="IExport.cs" />
+    <Compile Include="IJobMetadata.cs" />
+    <Compile Include="ITaskItem.cs" />
+    <Compile Include="ITaskJob.cs" />
+    <Compile Include="JobTaskTypeAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskItem.cs" />
+    <Compile Include="TaskJobType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Web;
-using Microsoft.AspNet.SignalR;
-using Microsoft.AspNet.SignalR.Hubs;
+
 using System.Collections.Concurrent;
 using System.Threading;
 using System.Collections.Generic;

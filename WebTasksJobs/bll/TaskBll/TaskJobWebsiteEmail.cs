@@ -1,4 +1,5 @@
-﻿using Kipodeal.Contract.TaskJob;
+﻿
+using Kipodeal.Contract.TaskJob;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Kipodeal.TaskJob
 {
+ //[PartCreationPolicy(CreationPolicy.NonShared)]
     [Export(typeof(ITaskJob))]
     [JobTaskType(TaskJobType.WebsiteEmailSender)]
     public class TaskJobWebsiteEmail : ITaskJob
@@ -23,7 +25,7 @@ namespace Kipodeal.TaskJob
             var result = tf.StartNew(() =>
             {
                 _taskitem.UpdateCount = 2;
-                _taskitem.TaskName = "start websetie";
+                _taskitem.TaskName = "start w";
 
             });
 

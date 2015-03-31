@@ -10,6 +10,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -21,14 +22,17 @@ using TasksJobs.TaskJob;
 
 namespace Kipodeal.TaskJob
 {
+     public interface IExport {
 
+        void InHere();
+    }
     public class TasksManagerAsync2<THub> where THub : Hub
     {
         private static volatile bool IsStartService = false;
-        [Import]
+        [Import(AllowRecomposition = true, AllowDefault = true)]
         Lazy<IDal> a;
 
-        [ImportMany]
+        [ImportMany(AllowRecomposition = true)]
         private IEnumerable<Lazy<ITaskJob, IJobMetadata>> AllPlugIns { get; set; }
 
         private readonly static Lazy<TasksManagerAsync2<THub>> _instance = new Lazy<TasksManagerAsync2<THub>>
@@ -38,7 +42,7 @@ namespace Kipodeal.TaskJob
 
         private static ConcurrentDictionary<Guid, string> SessionCallers = new ConcurrentDictionary<Guid, string>();
 
-        private readonly TimeSpan _updateInterval = TimeSpan.FromSeconds(1);// TimeSpan.FromMilliseconds(250);
+        private readonly TimeSpan _updateInterval = TimeSpan.FromSeconds(10);// TimeSpan.FromMilliseconds(250);
 
         private readonly Random _updateOrNotRandom = new Random();
 
@@ -63,6 +67,13 @@ namespace Kipodeal.TaskJob
             };
             allTasks.ForEach(taskItem => _tasks.TryAdd(taskItem.TaskId, taskItem));
 
+
+            LoadPlugins();
+        }
+        CompositionContainer _container;
+       
+        public void LoadPlugins()
+        {
             //Step 1:
             //Find the assembly (.dll) that has the stuff we need 
             //(i.e. [Export]ed stuff) and put it in our catalog
@@ -87,35 +98,90 @@ namespace Kipodeal.TaskJob
 
             if (!di.Exists) throw new Exception("Folder not exists: " + di.FullName);
 
-            var dlls = di.GetFileSystemInfos("*.dll");
+            //var dlls = di.GetFileSystemInfos("*.dll");
             AggregateCatalog catalog = new AggregateCatalog();
-            foreach (var fi in dlls)
-            {
-                try
-                {
-                    var ac = new AssemblyCatalog(Assembly.LoadFile(fi.FullName));
-                    var parts = ac.Parts.ToArray(); // throws ReflectionTypeLoadException 
-                    catalog.Catalogs.Add(ac);
-                }
-                catch (ReflectionTypeLoadException ex)
-                {
-                    // Elmah.ErrorSignal.FromCurrentContext().Raise(ex);
-                }
-            }
-            catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
-            
+            //foreach (var fi in dlls)
+            //{
+            //    try
+            //    {
+            //        var ac = new AssemblyCatalog(Assembly.LoadFile(fi.FullName));
+            //        var parts = ac.Parts.ToArray(); // throws ReflectionTypeLoadException 
+            //        catalog.Catalogs.Add(ac);
+            //    }
+            //    catch (ReflectionTypeLoadException ex)
+            //    {
+            //        // Elmah.ErrorSignal.FromCurrentContext().Raise(ex);
+            //    }
+            //}
 
-            CompositionContainer container = new CompositionContainer(catalog);
-            container.ComposeExportedValue("ConnStr", connStr);
+            // catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
+            var dcatalog = new DirectoryCatalog(di.FullName);
+            catalog.Catalogs.Add(dcatalog);
+
+
+
+            // _container = new CompositionContainer(catalog);
+            _container = new CompositionContainer(dcatalog);
+
+            _container.ComposeExportedValue("ConnStr", connStr);
+
+
+
+            //   _batch = new CompositionBatch();
+
+            // Store the settingsPart for later removal...
+
+
             //Step 3:
             //Now lets do the magic bit - Wiring everything up
-            container.ComposeParts(this);
+            _container.ComposeParts(this);
+            //_container.ExportsChanging += (s, e) =>
+            //{// getting the changes gap
+            //    dcatalog.Refresh();
+            //    Debug.WriteLine("ss");
+            //};
+            _container.ExportsChanged += (s, e) =>
+            {// getting the changes gap
 
+                dcatalog.Refresh();
+                Debug.WriteLine("ss");
+            };
+
+
+            //var cachePath = @"e:\ShadowDLL";
+
+            //if (!Directory.Exists(cachePath))
+            //{
+            //    Directory.CreateDirectory(cachePath);
+            //}
+            //if (!Directory.Exists(di.FullName))
+            //{
+            //    Directory.CreateDirectory(di.FullName);
+            //}
+            //var setup = new AppDomainSetup
+            //{
+            //    CachePath = cachePath,
+            //    ShadowCopyFiles = "true",
+            //    ShadowCopyDirectories = di.FullName
+            //};
+           // AppDomain domain = AppDomain.CreateDomain("DynamicHost_AppDomain", AppDomain.CurrentDomain.Evidence, setup);
+            
+            //  IsStartService = true;
         }
 
+        public void StopPlugins()
+        {
+            IsStartService = false;
+            // _container.ReleaseExports<IEnumerable<Lazy<ITaskJob, IJobMetadata>>>(AllPlugIns);
+
+            //var export = _container.GetExports<ITaskJob, IJobMetadata>();
+            //_container.ReleaseExports(export);
+            //_container.ComposeParts(this);
+         
+        }
         public async Task InitTask(Guid taskid, string callerId)
         {
-          var d=  a.Value.show();
+            var d = a.Value.show();
             // var df = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
             LoggerManager log = new LoggerManager();
             log.Trace("TasksManagerAsync", "InitTask", "begin: taskid" + taskid.ToString() + ",callerid" + callerId);

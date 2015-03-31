@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TaskBll</RootNamespace>
-    <AssemblyName>TaskBll</AssemblyName>
+    <AssemblyName>TaskBll2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,15 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Export.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskJobMemberEmail.cs" />
     <Compile Include="TaskJobSupplierEmail.cs" />
     <Compile Include="TaskJobWebsiteEmail.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\TasksJob\TasksJob.csproj">
-      <Project>{9db2c118-54af-40a9-9651-48c3203cfbc9}</Project>
-      <Name>TasksJob</Name>
+    <ProjectReference Include="..\..\contract\Lior.Job.Contract\Lior.Job.Contract.csproj">
+      <Project>{e3f36d6f-5e76-4a48-b007-2db6f482a8de}</Project>
+      <Name>Lior.Job.Contract</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

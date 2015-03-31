@@ -29,7 +29,15 @@ namespace Kipodeal.RT
         {
             return await _tasks.GetAllTasks();
         }
+        public  void StopPlugins()
+        {
+            _tasks.StopPlugins();
+        }
 
+        public void StartPlugins()
+        {
+            _tasks.LoadPlugins();
+        }
         public async Task StopTask(Guid taskid)
         {
             string callerid = this.Context != null ? this.Context.ConnectionId : "";

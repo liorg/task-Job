@@ -71,7 +71,12 @@
 
          <button id="st2" value="2">stop task 2</button>
     </div>
+     <div>
+        <button id="stp" value="1">start plugins 1</button>
 
+         <button id="ebp" value="2">stop plugins 2</button>
+
+    </div>
     <!--Script references. -->
     <!--Reference the jQuery library. -->
   <!--  <script src="../../Scripts/jquery-1.10.2.min.js"></script>
@@ -101,6 +106,15 @@
         }
 
         $(function () {
+
+            $("#stp").click(function () {
+                debugger;
+                ticker.server.startPlugins();
+            });
+            $("#ebp").click(function () {
+                ticker.server.stopPlugins();
+            });
+
             $("#t1").click(function () {
                 ticker.server.loadTask("{8F397C1B-5395-1111-1111-42BD4B4856AB}");
             });
