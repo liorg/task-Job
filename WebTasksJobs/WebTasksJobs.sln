@@ -21,8 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contract", "Contract", "{89
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Job.Contract", "contract\Lior.Job.Contract\Lior.Job.Contract.csproj", "{E3F36D6F-5E76-4A48-B007-2DB6F482A8DE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{7ACB3D7B-EDA8-49E3-A3C6-044002DFEE31}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serivices", "Serivices", "{D0693316-25FE-40A5-A8E6-BE3ED39B110E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Service.PluginableService", "jobs\JobExcute\Lior.Service.PluginableService.csproj", "{2805EECE-8B79-4C08-8AA0-0DBAEB184DE4}"
