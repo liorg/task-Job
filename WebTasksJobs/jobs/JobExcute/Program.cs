@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Lior.Service.PluginableService
+namespace Lior.Job.Service.PluginableService
 {
 
     internal class Program

@@ -7,8 +7,8 @@
     <ProjectGuid>{2805EECE-8B79-4C08-8AA0-0DBAEB184DE4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lior.Service.PluginableService</RootNamespace>
-    <AssemblyName>Lior.Service.PluginableService</AssemblyName>
+    <RootNamespace>Lior.Job.Service.PluginableService</RootNamespace>
+    <AssemblyName>Lior.Job.Service.PluginableService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Job.Contract", "contra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serivices", "Serivices", "{D0693316-25FE-40A5-A8E6-BE3ED39B110E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Service.PluginableService", "jobs\JobExcute\Lior.Service.PluginableService.csproj", "{2805EECE-8B79-4C08-8AA0-0DBAEB184DE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Job.Service.PluginableService", "jobs\JobExcute\Lior.Job.Service.PluginableService.csproj", "{2805EECE-8B79-4C08-8AA0-0DBAEB184DE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBll", "bll\TaskBll\TaskBll.csproj", "{5A26D304-123D-4B1D-8F04-78263BFDFE40}"
 EndProject
