@@ -1,5 +1,0 @@
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobtest\jobNotifiaction\bin\Debug\jobTestEmail.exe.config
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobtest\jobNotifiaction\bin\Debug\jobTestEmail.exe
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobtest\jobNotifiaction\bin\Debug\jobTestEmail.pdb
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobtest\jobNotifiaction\obj\Debug\jobTestEmail.exe
-C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobtest\jobNotifiaction\obj\Debug\jobTestEmail.pdb
