@@ -8,7 +8,7 @@ using System.ComponentModel.Composition.Registration;
 using System.IO;
 using System.Linq;
 
-namespace JobExcute
+namespace Lior.Service.PluginableService
 {
    
     public class Runner : MarshalByRefObject

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace JobExcute
+namespace Lior.Service.PluginableService
 {
 
     internal class Program

@@ -7,8 +7,8 @@
     <ProjectGuid>{2805EECE-8B79-4C08-8AA0-0DBAEB184DE4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JobExcute</RootNamespace>
-    <AssemblyName>JobExcute</AssemblyName>
+    <RootNamespace>Lior.Service.PluginableService</RootNamespace>
+    <AssemblyName>Lior.Service.PluginableService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runner.cs" />
   </ItemGroup>

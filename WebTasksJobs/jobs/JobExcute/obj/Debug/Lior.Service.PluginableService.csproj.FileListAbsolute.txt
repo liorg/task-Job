@@ -1,0 +1,6 @@
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobs\JobExcute\bin\Debug\Lior.Service.PluginableService.exe
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobs\JobExcute\bin\Debug\Lior.Service.PluginableService.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobs\JobExcute\bin\Debug\Lior.Job.Contract.dll
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobs\JobExcute\bin\Debug\Lior.Job.Contract.pdb
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobs\JobExcute\obj\Debug\Lior.Service.PluginableService.exe
+C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\jobs\JobExcute\obj\Debug\Lior.Service.PluginableService.pdb
