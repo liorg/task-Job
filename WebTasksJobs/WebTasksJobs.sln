@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lior.Job.Service.Host", "Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Job.Service.WebSite", "services\Site\Lior.Job.Service.WebSite\Lior.Job.Service.WebSite.csproj", "{B7F2556C-CFE5-4DEA-8324-12980A12AE51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Job.Provider.Register", "provider\Lior.Job.Provider.Register\Lior.Job.Provider.Register.csproj", "{5DAA7C54-5899-4A59-A184-81EA46A78911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lior.Job.Provider.Monitor", "provider\Lior.Job.Provider.Monitor\Lior.Job.Provider.Monitor.csproj", "{E53CBCB2-955E-4A31-99AB-F666A4F53348}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,14 @@ Global
 		{B7F2556C-CFE5-4DEA-8324-12980A12AE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7F2556C-CFE5-4DEA-8324-12980A12AE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7F2556C-CFE5-4DEA-8324-12980A12AE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DAA7C54-5899-4A59-A184-81EA46A78911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DAA7C54-5899-4A59-A184-81EA46A78911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DAA7C54-5899-4A59-A184-81EA46A78911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DAA7C54-5899-4A59-A184-81EA46A78911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53CBCB2-955E-4A31-99AB-F666A4F53348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53CBCB2-955E-4A31-99AB-F666A4F53348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53CBCB2-955E-4A31-99AB-F666A4F53348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53CBCB2-955E-4A31-99AB-F666A4F53348}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +94,8 @@ Global
 		{2805EECE-8B79-4C08-8AA0-0DBAEB184DE4} = {D0693316-25FE-40A5-A8E6-BE3ED39B110E}
 		{F243C24E-B317-4534-B8F0-8FA41B94058C} = {D0693316-25FE-40A5-A8E6-BE3ED39B110E}
 		{B7F2556C-CFE5-4DEA-8324-12980A12AE51} = {D0693316-25FE-40A5-A8E6-BE3ED39B110E}
+		{5DAA7C54-5899-4A59-A184-81EA46A78911} = {0BC81CF2-55D4-48B2-AEB1-CFE7E471E6EB}
+		{E53CBCB2-955E-4A31-99AB-F666A4F53348} = {0BC81CF2-55D4-48B2-AEB1-CFE7E471E6EB}
 		{0EF17F87-0F96-474F-B593-24B2B214B3AD} = {F243C24E-B317-4534-B8F0-8FA41B94058C}
 	EndGlobalSection
 EndGlobal
