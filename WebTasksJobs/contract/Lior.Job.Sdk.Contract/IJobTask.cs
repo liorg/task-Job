@@ -1,12 +1,14 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lior.Job.Provider.Monitor
+namespace Lior.Job.Sdk.Contract
 {
-    public class Class1
+    public interface IJobTask
     {
+         Guid TaskId { get; set; }
     }
 }
