@@ -2,3 +2,8 @@ C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contrac
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\bin\Debug\Lior.Job.Contract.pdb
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\obj\Debug\Lior.Job.Contract.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\obj\Debug\Lior.Job.Contract.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\bin\Debug\Lior.Job.Contract.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\bin\Debug\Lior.Job.Contract.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\obj\Debug\Lior.Job.Contract.csprojResolveAssemblyReference.cache
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\obj\Debug\Lior.Job.Contract.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\contract\Lior.Job.Contract\obj\Debug\Lior.Job.Contract.pdb

@@ -5,3 +5,10 @@ C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Lio
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.csprojResolveAssemblyReference.cache
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll2.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll2.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TaskBll2.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\TaskBll2.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Lior.Job.Contract.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\bin\Debug\Lior.Job.Contract.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll.csprojResolveAssemblyReference.cache
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll2.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\bll\TaskBll\obj\Debug\TaskBll2.pdb

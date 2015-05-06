@@ -5,3 +5,10 @@ C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibr
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\obj\Debug\Lior.Jobs.TaskDal.csprojResolveAssemblyReference.cache
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\obj\Debug\Lior.Jobs.TaskDal.dll
 C:\Users\lior_g\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\obj\Debug\Lior.Jobs.TaskDal.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\bin\Debug\Lior.Jobs.TaskDal.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\bin\Debug\Lior.Jobs.TaskDal.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\bin\Debug\Lior.Job.Contract.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\bin\Debug\Lior.Job.Contract.pdb
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\obj\Debug\Lior.Jobs.TaskDal.csprojResolveAssemblyReference.cache
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\obj\Debug\Lior.Jobs.TaskDal.dll
+C:\Users\lior_gr\Documents\GitHub\task-Job\WebTasksJobs\dal\JobsTaskDal\ClassLibrary1\obj\Debug\Lior.Jobs.TaskDal.pdb
